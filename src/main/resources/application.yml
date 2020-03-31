@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: oneline-game-api
+
+server:
+  port: 9292
+
+online-game:
+  configuration-path: config/online-game-configuration.csv

@@ -1,21 +1,24 @@
 plugins {
-    id 'java'
-    id 'application'
+    id 'org.springframework.boot' version '2.2.6.RELEASE'
 }
+
+apply plugin: 'java'
+apply plugin: 'io.spring.dependency-management'
 
 repositories {
     jcenter()
 }
 
 dependencies {
-    implementation 'com.google.guava:guava:28.1-jre'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.apache.commons:commons-lang3:3.10'
 
+    compileOnly 'org.projectlombok:lombok:1.18.10'
+    annotationProcessor 'org.projectlombok:lombok:1.18.10'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.5.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.5.2'
-}
-
-application {
-    mainClassName = 'com.online.game.api.App'
 }
 
 test {

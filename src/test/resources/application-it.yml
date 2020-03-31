@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: oneline-game-api-it
+
+online-game:
+  configuration-path: config/online-game-configuration-it.csv

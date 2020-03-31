@@ -31,3 +31,4 @@ build
 # IDE files
 .idea
 *.iml
+out
